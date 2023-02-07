@@ -1,0 +1,35 @@
+*{
+    font-family:quicksand;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url(./Fonts/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+/*               COLORS                 */
+:root {
+    --main: #212529;
+    --secondary: #6C757D;
+    --accent: #ADB5BD;
+    --textPrimary: #f8f9fa;
+    --textSecondary: #CED4DA;
+}
+
+.bg-primary {
+    background-color: var(--main);
+}
+.bg-secondary {
+    background-color: var(--secondary);
+}
+.bg-accent {
+    background-color: var(--accent);
+}
+.text-primary {
+    color: var(--textPrimary);
+}
+.text-secondary {
+    color: var(--textSecondary);
+}
