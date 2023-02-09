@@ -1,7 +1,3 @@
-*{
-    font-family:quicksand;
-}
-
 @font-face {
     font-family: 'quicksand';
     src: url(./Fonts/Quicksand-VariableFont_wght.ttf);
@@ -9,6 +5,12 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: 'marck';
+    src: url(./Fonts/MarckScript-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
 /*               COLORS                 */
 :root {
     --main: #212529;
@@ -34,11 +36,20 @@
     color: var(--textSecondary);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
+    font-family: quicksand;
     color: var(--textPrimary);
+    font-size: 2.25rem;
+}
+h2 {
+    font-family: marck;
+    color: var(--textPrimary);
+    font-size: 2.25rem;
 }
 p {
+    font-family: quicksand;
     color: var(--textSecondary);
+    font-size:1.5rem;
 }
 
 #picture1 {
@@ -50,3 +61,4 @@ p {
     width: 100%;
     position: relative;
 }
+
