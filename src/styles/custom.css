@@ -33,3 +33,20 @@
 .text-secondary {
     color: var(--textSecondary);
 }
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--textPrimary);
+}
+p {
+    color: var(--textSecondary);
+}
+
+#picture1 {
+    background-image: url(src/images/zdjSalonu2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
