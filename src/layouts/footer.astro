@@ -1,5 +1,6 @@
 <footer class='bg-primary py-4'>
-    <div id="contact" class="flex flex-col justify-between text-center md:flex-row md:text-left ">
+    <div id="contact" class="flex flex-col text-center justify-center
+        md:justify-between md:flex-row md:text-left ">
         <div> 
             <h1> Dane kontaktowe </h1>
                 <h1 class='text-3xl'>Telefon:</h1>
@@ -11,24 +12,30 @@
                 <p>twojstyl123@gmail.components</p>
                 <h1 class='text-3xl'>Adres:</h1>
                 <p>ul. Henryka Sienkiewicza 25<br /> 34-300 Żywiec</p>
-            <div>
-                <h1 class='text-3xl'>Social media</h1>
-                <div class="flex">
-                    <a href="https://www.facebook.com/profile.php?id=100063466146720"><img src="src/images/facebook.png" alt='Facebook' class="w-12"></a>
-                    <a href="https://instagram.com/twoj_styl.e.w/"><img src="src/images/instagram.png" alt='Instagram' class="w-12"></a>
-                </div>
+            <div class="flex flex-col md:flex-row py-6">
+                <h1 class='text-4xl'>Social media</h1>
+                <p class="flex justify-center">
+                    <a href="https://www.facebook.com/profile.php?id=100063466146720"><img src="src/images/facebook.png" alt='Facebook' class="w-12 mx-2"></a>
+                    <a href="https://instagram.com/twoj_styl.e.w/"><img src="src/images/instagram.png" alt='Instagram' class="w-12 mx-2"></a>
+                </p>
             </div>
         </div>
         
         
-        <div class="w-2/5 h-2/5">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.9797763479595!2d19.20270666718981!3d49.69190854667544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714262bbc132eaf%3A0xdebfe383dbf92b86!2sHenryka%20Sienkiewicza%2025%2C%2034-315%20%C5%BBywiec!5e0!3m2!1spl!2spl!4v1633438164957!5m2!1spl!2spl"
-            allowfullscreen="true" loading="lazy" class="w-2/5"></iframe>
-            <a href="https://www.embedgooglemap.net"></a>
+        <div class="mapouter my-4 m-auto md:m-0">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.9797763479595!2d19.20270666718981!3d49.69190854667544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714262bbc132eaf%3A0xdebfe383dbf92b86!2sHenryka%20Sienkiewicza%2025%2C%2034-315%20%C5%BBywiec!5e0!3m2!1spl!2spl!4v1633438164957!5m2!1spl!2spl"
+                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <style>
+                    .mapouter{position:relative;text-align:right;height:400px;width:500px; max-width: 100%;}
+                </style>
+                <a href="https://www.embedgooglemap.net"></a>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:350px;width:500px; max-width: 100%;}</style>
+            </div>
         </div>
     </div>
     
     <div id="wyk">
-        <p class="text-right">Wykonanie strony: <a href="https://github.com/razogarz">Patryk Knapek</a></p>
+        <p class="text-right py-4">Wykonanie strony: <a href="https://github.com/razogarz">Patryk Knapek</a></p>
     </div>
 </footer>
