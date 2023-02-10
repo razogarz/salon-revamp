@@ -18,16 +18,16 @@ export default function Navbar() {
     return (
         <div className='mb-0'>
             <div className='lg:text-4xl md:text-2xl md:block hidden m-auto bg-primary text-primary text-center'>
-                <button className='px-6 py-4'>O nas</button>
-                <button className='px-6 py-4'>Godziny Otwarcia</button>
-                <button className='px-6 py-4'>Kontakt</button>
-                <button className='px-6 py-4'>Galeria</button>
+                <button className='px-6 py-4 italic'>O nas</button>
+                <button className='px-6 py-4 italic'>Godziny Otwarcia</button>
+                <button className='px-6 py-4 italic'>Kontakt</button>
+                <button className='px-6 py-4 italic'>Galeria</button>
             </div>
             <div className=' md:hidden p-4 bg-primary text-primary text-2xl'>
                 <div className='flex justify-between py-3'>
-                    <p className='sm:text-4xl'>
+                    <h2 className="sm:text-5xl">
                         Twój Styl
-                    </p>
+                    </h2>
                     <button ref={hamburgerIcon} 
                         onClick={toggleHamburger} >
                         <img className='sm:hidden block' src={BurgirSmall} />
