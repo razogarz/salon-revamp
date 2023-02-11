@@ -21,7 +21,7 @@ export default function Navbar() {
                 <button className='px-6 py-4 italic'>O nas</button>
                 <button className='px-6 py-4 italic'>Godziny Otwarcia</button>
                 <button className='px-6 py-4 italic'>Kontakt</button>
-                <button className='px-6 py-4 italic'>Galeria</button>
+                <button className='px-6 py-4 italic'><a href='/galery'>Galeria</a></button>
             </div>
             <div className=' md:hidden p-4 bg-primary text-primary text-2xl'>
                 <div className='flex justify-between py-4'>
