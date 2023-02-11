@@ -1,5 +1,5 @@
-import BurgirSmall from '../images/burgirS.png';
-import BurgirBig from '../images/burgir.png';
+import BurgirSmall from '../images/icons/burgirS.png';
+import BurgirBig from '../images/icons/burgir.png';
 import { useRef, createRef } from 'react';
 
 let hamburgerIcon = createRef<HTMLButtonElement>();
@@ -24,7 +24,7 @@ export default function Navbar() {
                 <button className='px-6 py-4 italic'>Galeria</button>
             </div>
             <div className=' md:hidden p-4 bg-primary text-primary text-2xl'>
-                <div className='flex justify-between py-3'>
+                <div className='flex justify-between py-4'>
                     <h2 className="sm:text-5xl">
                         Twój Styl
                     </h2>
@@ -34,7 +34,7 @@ export default function Navbar() {
                         <img className='sm:block hidden' src={BurgirBig} />
                     </button>
                 </div>
-                <div ref={hamburgerMenu} className='hidden flex-col'>
+                <div ref={hamburgerMenu} className='sm:text-3xl hidden flex-col absolute z-10 bg-primary left-0 w-full px-4 py-4'>
                     <button className='text-left py-3'>O nas</button>
                     <button className='text-left py-3'>Godziny Otwarcia</button>
                     <button className='text-left py-3'>Kontakt</button>
