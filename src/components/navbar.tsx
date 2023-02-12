@@ -18,10 +18,10 @@ export default function Navbar() {
     return (
         <div className='mb-0'>
             <div className='lg:text-4xl md:text-2xl md:block hidden m-auto bg-primary text-primary text-center'>
-                <button className='px-6 py-4 italic'><a href="#onas">O nas</a></button>
-                <button className='px-6 py-4 italic'><a href="#godziny">Godziny Otwarcia</a></button>
-                <button className='px-6 py-4 italic'><a href="#kontakt">Kontakt</a></button>
-                <button className='px-6 py-4 italic'><a href='/galery'>Galeria</a></button>
+                <button className='px-6 py-4 italic hover:bg-secondary'><a href="#onas">O nas</a></button>
+                <button className='px-6 py-4 italic hover:bg-secondary'><a href="#godziny">Godziny Otwarcia</a></button>
+                <button className='px-6 py-4 italic hover:bg-secondary'><a href="#kontakt">Kontakt</a></button>
+                <button className='px-6 py-4 italic hover:bg-secondary'><a href='/galery'>Galeria</a></button>
             </div>
             <div className=' md:hidden p-4 bg-primary text-primary text-2xl'>
                 <div className='flex justify-between py-4'>
@@ -35,10 +35,10 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div ref={hamburgerMenu} className='sm:text-3xl hidden flex-col absolute z-10 bg-primary left-0 w-full px-4 py-4'>
-                    <button className='text-left py-3'><a href="#onas">O nas</a></button>
-                    <button className='text-left py-3'><a href="#godziny">Godziny Otwarcia</a></button>
-                    <button className='text-left py-3'><a href="#kontakt">Kontakt</a></button>
-                    <button className='text-left py-3'>Galeria</button>
+                    <button className='text-left py-3 animationClass_nav1'><a href="#onas">O nas</a></button>
+                    <button className='text-left py-3 animationClass_nav2'><a href="#godziny">Godziny Otwarcia</a></button>
+                    <button className='text-left py-3 animationClass_nav3'><a href="#kontakt">Kontakt</a></button>
+                    <button className='text-left py-3 animationClass_nav4'>Galeria</button>
                 </div>
             </div>
         </div>

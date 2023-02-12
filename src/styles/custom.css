@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 100;
 }
-/*               COLORS                 */
+/*               COLOURS                 */
 :root {
     --main: #212529;
     --secondary: #6C757D;
@@ -36,6 +36,11 @@
     color: var(--textSecondary);
 }
 
+.hover\:bg-secondary:hover {
+    background-color: var(--secondary);
+    transition-duration: 0.5s;
+}
+
 h1 {
     font-family: quicksand;
     color: var(--textPrimary);
@@ -50,6 +55,11 @@ p {
     font-family: quicksand;
     color: var(--textSecondary);
     font-size:1.5rem;
+}
+
+p > a {
+    color: skyblue;
+    transition-duration: 0.5s;
 }
 
 #picture1 {
@@ -70,4 +80,26 @@ p {
     -webkit-box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);
     -moz-box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);
     box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animationClass_nav1 {
+    animation: fadeIn 0.3s ease-in;
+}
+.animationClass_nav2 {
+    animation: fadeIn 0.5s ease-in;
+}
+.animationClass_nav3 {
+    animation: fadeIn 0.7s ease-in;
+}
+.animationClass_nav4 {
+    animation: fadeIn 0.9s ease-in;
 }
