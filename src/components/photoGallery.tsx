@@ -5,7 +5,7 @@ function renderGallery(){
     let gallery = [];
     for(let i = 1; i <= 42; i++){
         gallery.push(
-            <a href={`src/images/maxi-img/pic${i}.jpg`}>
+            <a href={`src/images/mini-img/pic${i}.jpg`}>
                 <img src={`src/images/mini-img/pic${i}.jpg`}/>
             </a>
         );
