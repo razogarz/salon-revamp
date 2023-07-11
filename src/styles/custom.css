@@ -76,7 +76,7 @@ p > a {
     width:16.66667%;
     padding: 0.5rem;
 } 
-#photoGallery > a > img{
+#photoGallery > div > a > img{
     -webkit-box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);
     -moz-box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);
     box-shadow: 5px 4px 12.5px 0.5px rgba(66, 68, 90, 1);

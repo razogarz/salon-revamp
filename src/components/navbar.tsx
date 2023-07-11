@@ -4,9 +4,9 @@ import { useRef, createRef } from 'react';
 
 let hamburgerIcon = createRef<HTMLButtonElement>();
 let hamburgerMenu = createRef<HTMLDivElement>();
-function toggleHamburger(){
+function toggleHamburger() {
     console.log('click');
-    if(hamburgerMenu.current?.classList.contains('hidden')){
+    if (hamburgerMenu.current?.classList.contains('hidden')) {
         hamburgerMenu.current?.classList.remove('hidden');
         hamburgerMenu.current?.classList.add('flex');
     } else {
@@ -28,7 +28,7 @@ export default function Navbar() {
                     <h2 className="sm:text-5xl">
                         Twój Styl
                     </h2>
-                    <button ref={hamburgerIcon} 
+                    <button ref={hamburgerIcon}
                         onClick={toggleHamburger} >
                         <img className='sm:hidden block' src={BurgirSmall} />
                         <img className='sm:block hidden' src={BurgirBig} />
@@ -38,9 +38,9 @@ export default function Navbar() {
                     <button className='text-left py-3 animationClass_nav1'><a href="#onas">O nas</a></button>
                     <button className='text-left py-3 animationClass_nav2'><a href="#godziny">Godziny Otwarcia</a></button>
                     <button className='text-left py-3 animationClass_nav3'><a href="#kontakt">Kontakt</a></button>
-                    <button className='text-left py-3 animationClass_nav4'>Galeria</button>
+                    <a href="/galery"><button className='text-left py-3 animationClass_nav4'>Galeria</button></a>
                 </div>
             </div>
         </div>
-       );
+    );
 }
