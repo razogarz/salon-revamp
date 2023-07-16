@@ -11,7 +11,7 @@ function renderGallery() {
         gallery.push(
             <div className="w-2/5 m-4 shadow-2xl md:w-1/6" key={index}>
                 <a href={image}>
-                    <img src={image} />
+                    <img className='w-full' src={image} />
                 </a>
             </div>
         );
