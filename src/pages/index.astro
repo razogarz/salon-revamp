@@ -1,4 +1,5 @@
 ---
+
 import Navbar from '../components/navbar';
 import Main from '../layouts/main.astro';
 import Footer from '../layouts/footer.astro';
@@ -17,7 +18,7 @@ import '../styles/custom.css';
         <title>Twój Styl Żywiec</title>
     </head>
     <body>
-        <Navbar client:only />
+        <Navbar client:only="react" />
         <Main></Main>
         <Footer></Footer>
     </body>

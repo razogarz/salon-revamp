@@ -1,12 +1,16 @@
 ---
-import backgroundImage from '../src/images/mini-img/zdjSalonu2.jpg'
+import saloonInside from '../images/mini-img/zdjSalonu2.jpg'
+import exampleHaircut1 from '../images/mini-img/mp1.jpg'
+import exampleHaircut2 from '../images/mini-img/mp2.jpg'
+import exampleHaircut3 from '../images/mini-img/mp3.jpg'
+import exampleHaircut4 from '../images/mini-img/mp4.jpg'
+import saloonFront from '../images/mini-img/zdjsalonu.jpg'
 ---
 <main class='flex flex-col bg-primary'>
-    <div id='picture1' class='flex m-auto'>
-        <h2 class='bg-primary m-auto p-12 opacity-80 text-6xl lg:text-9xl hidden md:block'>
-            Twój Styl
-        </h2>
-    </div>
+    <img id="picture1" src={saloonInside} alt="Salon" class="h-1/2">
+    <h2 class='absolute left-1/4 right-1/4 text-center top-1/3 lg:top-1/3 bg-primary m-auto p-12 opacity-80 text-6xl lg:text-8xl hidden md:block'>
+        Twój Styl
+    </h2>
     <div id='onas' class="flex flex-col md:flex-row">
         <div class="p-8 md:w-1/3">
             <h1 class="p-2 m-2 text-center border-b text-4xl">Kim jesteśmy?</h1>
@@ -35,16 +39,16 @@ import backgroundImage from '../src/images/mini-img/zdjSalonu2.jpg'
         <h1 class="text-center py-6 text-4xl"> Przykładowe efekty naszej pracy: </h1>
         <div class="flex flex-wrap justify-evenly">
             <div class="p-8 w-2/5 border-b">
-                <a target ="_blank" href="src/images/mini-img/mp1.jpg" ><img src="src/images/mini-img/mp1.jpg" alt='Przykładowe zdjęcie' ></a>
+                <a target ="_blank" href={exampleHaircut1} ><img src={exampleHaircut1} alt='Przykładowe zdjęcie' ></a>
             </div>
             <div class="p-8 w-2/5 border-b">
-                <a target ="_blank" href="src/images/mini-img/mp2.jpg"><img src="src/images/mini-img/mp2.jpg" alt='Przykładowe zdjęcie'></a>
+                <a target ="_blank" href={exampleHaircut2}><img src={exampleHaircut2} alt='Przykładowe zdjęcie'></a>
             </div>
             <div class="p-8 w-2/5">
-                <a target ="_blank" href="src/images/mini-img/mp3.jpg"><img src="src/images/mini-img/mp3.jpg" alt='Przykładowe zdjęcie'></a>
+                <a target ="_blank" href={exampleHaircut3}><img src={exampleHaircut3} alt='Przykładowe zdjęcie'></a>
             </div>
             <div class="p-8 w-2/5">
-                <a target ="_blank" href="src/images/mini-img/mp4.jpg"><img src="src/images/mini-img/mp4.jpg" alt='Przykładowe zdjęcie'></a>
+                <a target ="_blank" href={exampleHaircut4}><img src={exampleHaircut4} alt='Przykładowe zdjęcie'></a>
             </div>
         </div>
     </div>
@@ -62,6 +66,6 @@ import backgroundImage from '../src/images/mini-img/zdjSalonu2.jpg'
     </div>
     <div id='picture2' class="flex flex-col">
         <h2 class="text-5xl text-center py-6 px-24 border-t m-auto"> Nasz Salon </h2>
-        <img src="src/images/mini-img/zdjsalonu.jpg" alt="Salon" class="w-full h-full">
+        <img src={saloonFront} alt="Salon" class="w-full h-full">
     </div>
 </main>

@@ -63,11 +63,10 @@ p > a {
 }
 
 #picture1 {
-    background-image: url(src/images/mini-img/zdjSalonu2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 65vh;
     width: 100%;
     position: relative;
 }
@@ -102,4 +101,14 @@ p > a {
 }
 .animationClass_nav4 {
     animation: fadeIn 0.9s ease-in;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 1250px) {
+    #picture1 {
+        height: 80vh;
+    }
+    #photoGallery > a{
+        width:33.33333%;
+    } 
 }

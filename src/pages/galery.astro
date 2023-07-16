@@ -1,5 +1,6 @@
 ---
 import '../styles/custom.css';
+import leftArrow from '../images/icons/backArrow64.png';
 import PhotoGallery from '../components/photoGallery';
 ---
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ import PhotoGallery from '../components/photoGallery';
     </head>
     <body>
         <div class='flex bg-primary'>
-            <a href="/" class="p-2 w-16 md:w-32"><img src='src/images/icons/backArrow64.png'></a>
+            <a href="/" class="p-2 w-16 md:w-32"><img src={leftArrow}></a>
             <h2 class='text-secondary m-auto text-5xl py-3'>Twój Styl</h2>
         </div>
         <PhotoGallery> </PhotoGallery>
